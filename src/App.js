@@ -3,7 +3,8 @@ import { commerce } from "./lib/Commerce";
 import Hero from "./components/Hero";
 import ProductsList from "./components/ProductsList";
 import CartNav from "./components/CartNav";
-import "./App.css";
+import "./Theme/Theme";
+import Theme from "./Theme/Theme";
 
 function App() {
   const [merchant, setMerchant] = useState({});
@@ -105,11 +106,11 @@ function App() {
   };
 
   return (
-    <div className="app">
+    <Theme className="app">
       <Hero merchant={merchant} />
       <CartNav cart={cart} onRemoveFromCart={handleRemoveFromCart} />
       <ProductsList products={products} onAddToCart={handleAddToCart} />
-    </div>
+    </Theme>
   );
 }
 

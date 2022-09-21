@@ -1,7 +1,7 @@
 .cart {
   width: 350px;
-  background-color: white;
-  border: 2px solid #292b83;
+  background-color: var(--colors-accent);
+  border: 2px solid var(--colors-text-primary);
   display: fixed;
   z-index: 1;
   top: 1.25rem;
@@ -12,8 +12,8 @@
 .cart__heading {
   padding: 0.95rem 1rem;
   font-weight: bold;
-  border-bottom: 2px solid #292b83;
-  color: #292b83;
+  border-bottom: 2px solid var(--colors-text-primary);
+  color: var(--colors-text-primary);
   font-size: 1.25rem;
 }
 .cart__inner {
@@ -22,16 +22,16 @@
 .cart__total {
   display: flex;
   padding: 1rem 1.25rem 0;
-  border-top: 2px solid #292b83;
+  border-top: 2px solid var(--colors-text-primary);
   justify-content: space-between;
 }
 .cart__total-title {
-  color: #292b83;
+  color: var(--colors-text-primary);
   font-weight: bold;
 }
 .cart__none {
   padding: 1.25rem;
-  color: #292b83;
+  color: var(--colors-text-primary);
   text-align: center;
 }
 .cart__footer {
@@ -41,18 +41,18 @@
 .cart__btn-empty {
   align-self: flex-start;
   background-color: white;
-  border: 2px solid #292b83;
+  border: 2px solid var(--colors-text-primary);
   padding-left: 1.25rem;
   padding: 0.5rem 0.75rem;
   margin: 0 1.25rem 1.25rem;
   text-transform: uppercase;
-  color: #292b83;
+  color: var(--colors-text-primary);
   font-weight: bold;
   font-size: 0.75rem;
 }
 .cart__btn-checkout {
-  background-color: #292b83;
-  border: 2px solid #292b83;
+  background-color: var(--colors-text-primary);
+  border: 2px solid var(--colors-text-primary);
   padding-left: 1.25rem;
   padding: 0.5rem 0.75rem;
   margin: 0 1.25rem 1.25rem;
@@ -72,12 +72,12 @@
   width: 4rem;
   height: 4rem;
   object-fit: cover;
-  border: 2px solid #ef4e42;
+  border: 2px solid var(--colors-accent);
   margin-right: 0.75rem;
 }
 .cart-item__details-name {
   font-size: 0.98rem;
-  color: #292b83;
+  color: var(--colors-text-primary);
   font-weight: bold;
   margin-bottom: 0.25rem;
 }
@@ -88,9 +88,9 @@
   font-size: 1rem;
 }
 .cart-item__details-qty button {
-  border: none;
+  /* border: none;
   background: none;
-  font-size: 1.25rem;
+  font-size: 1.25rem; */
 }
 .cart-item__details-qty p {
   margin-bottom: 0;
@@ -101,11 +101,11 @@
 }
 .cart-item__remove {
   background-color: white;
-  border: 2px solid #292b83;
+  border: 2px solid var(--colors-text-primary);
   padding: 0.5rem 0.75rem;
   font-size: 0.75rem;
   text-transform: uppercase;
-  color: #292b83;
+  color: var(--colors-text-primary);
   font-weight: bold;
   margin-left: auto;
   align-self: flex-start;

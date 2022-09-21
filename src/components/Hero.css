@@ -1,16 +1,21 @@
 .hero {
-  background-image: url("./hero-img.png");
+  /* background-image: url("./hero-img.png"); */
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   height: 100vh;
+}
+.hero-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .hero img {
   padding: 30px 0 0 30px;
   cursor: pointer;
 }
 .hero__text {
-  color: #292b83;
+  color: var(--colors-text-primary);
   position: absolute;
   top: 50%;
   left: 23%;
@@ -21,16 +26,16 @@
   font-weight: bold;
   font-size: 42px;
 }
-.btn {
-  background: #ef4e42;
+/* .btn {
+  background: var(--colors-accent);
   color: white;
   border-radius: 18px;
   text-transform: uppercase;
 }
 .btn:hover {
-  background: #ec2b1c;
+  background: var(--colors-accent-darker);
   transition: all 0.3s ease;
 }
 .btn:active {
-  background: #a4180e;
-}
+  background: var(--colors-accent);
+} */

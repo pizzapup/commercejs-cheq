@@ -1,27 +1,34 @@
 import React, { useState } from "react";
 import Cart from "./Cart";
 import "./Nav.css";
+import CartIcon from "../assets/icons/CartIcon";
+import CloseIcon from "../assets/CloseIcon";
 
 const CartNav = ({ cart, onRemoveFromCart }) => {
   const [isCartVisible, setCartVisible] = useState(false);
 
   const renderOpenButton = () => (
-    <button className="nav__cart-btn--open">
-      {/* <FontAwesomeIcon size="2x" icon="shopping-bag" color="#292B83"/> */}{" "}
-      <>shopping bag icon</>
-      {cart !== null ? <span>{cart.total_items}</span> : ""}
+    <button className="nav__cart-btn  nav__cart-btn--open">
+      <CartIcon className="cart-icon" />
+      {cart !== null ? (
+        <span className="nav__cart-total">
+          <span className="nav__cart-total-text">{cart.total_items}</span>
+        </span>
+      ) : (
+        ""
+      )}
     </button>
   );
 
   const renderCloseButton = () => (
-    <button className="nav__cart-btn--close">
-      {/* <FontAwesomeIcon size="1x" icon="times" color="white" /> */}
-      <>close icon</>
+    <button className="nav__cart-btn nav__cart-btn--close ">
+      <CloseIcon />
     </button>
   );
 
   return (
     <div className="nav">
+      <div className="logo">E-Commerce</div>
       <div className="nav__cart" onClick={() => setCartVisible(!isCartVisible)}>
         {!isCartVisible ? renderOpenButton() : renderCloseButton()}
       </div>
