@@ -17,7 +17,7 @@ const ProductItem = ({ product, onAddToCart }) => {
         className="product__image img"
         // src={product.media.source}
         src={
-          "https://source.unsplash.com/random/647x908/?pink," +
+          "https://source.unsplash.com/random/647x908/?halloween," +
           ` ${product.name}`
         }
         alt={product.name}

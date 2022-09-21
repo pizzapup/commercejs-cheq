@@ -30,6 +30,7 @@ body {
   background-color: var(--colors-bg-color);
   color: var(--colors-text-primary);
   font-family: -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 .img {
   filter: saturate(90%);

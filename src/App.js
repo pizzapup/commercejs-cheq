@@ -107,8 +107,8 @@ function App() {
 
   return (
     <Theme className="app">
-      <Hero merchant={merchant} />
       <CartNav cart={cart} onRemoveFromCart={handleRemoveFromCart} />
+      <Hero merchant={merchant} />
       <ProductsList products={products} onAddToCart={handleAddToCart} />
     </Theme>
   );

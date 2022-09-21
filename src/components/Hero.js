@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./Hero.css";
 
-const HeroImage = "https://source.unsplash.com/random/2000x860/?cute,shop";
+const HeroImage = "https://source.unsplash.com/random/2000x860/?bright,shop";
 const Hero = ({ merchant }) => (
   <div
     className="hero img hero-img"
@@ -12,6 +12,7 @@ const Hero = ({ merchant }) => (
   >
     <div className="hero__text">
       <h1>{merchant.business_name}</h1>
+
       <a href="#products" className="btn btn--primary">
         Shop
       </a>

@@ -1,6 +1,6 @@
 .cart {
   width: 350px;
-  background-color: var(--colors-accent);
+  background-color: var(--colors-surface-darker);
   border: 2px solid var(--colors-text-primary);
   display: fixed;
   z-index: 1;
@@ -100,9 +100,10 @@
   font-size: 0.875rem;
 }
 .cart-item__remove {
+  max-width: 40px;
   background-color: white;
   border: 2px solid var(--colors-text-primary);
-  padding: 0.5rem 0.75rem;
+  /* padding: 0.5rem 0.75rem; */
   font-size: 0.75rem;
   text-transform: uppercase;
   color: var(--colors-text-primary);

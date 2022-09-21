@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Cart from "./Cart";
 import "./Nav.css";
 import CartIcon from "../assets/icons/CartIcon";
-import CloseIcon from "../assets/CloseIcon";
+import CloseIcon from "../assets/icons/CloseIcon";
 
 const CartNav = ({ cart, onRemoveFromCart }) => {
   const [isCartVisible, setCartVisible] = useState(false);
@@ -11,9 +11,7 @@ const CartNav = ({ cart, onRemoveFromCart }) => {
     <button className="nav__cart-btn  nav__cart-btn--open">
       <CartIcon className="cart-icon" />
       {cart !== null ? (
-        <span className="nav__cart-total">
-          <span className="nav__cart-total-text">{cart.total_items}</span>
-        </span>
+        <span className="nav__cart-total">{cart.total_items}</span>
       ) : (
         ""
       )}

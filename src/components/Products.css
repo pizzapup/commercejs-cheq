@@ -1,16 +1,18 @@
 .products {
   display: block;
   border-radius: 5px;
-  /* grid-gap: 15px; */
+  grid-gap: 15px;
+  grid-template-rows: 1fr;
 }
 .product {
+  height: 90%;
   margin: 10px;
   padding-bottom: 2rem;
   border-radius: 5px;
   background-color: var(--colors-surface-color);
 }
 .product__info {
-  min-height: 130px;
+  /* min-height: 130px; */
   padding: 10px 8px 8px;
   display: flex;
   flex-direction: column;
@@ -55,5 +57,12 @@
   .products {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .products {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }

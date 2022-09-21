@@ -8,10 +8,12 @@ button,
   border-radius: 3px;
   text-align: center;
   transition: all 0.15s linear 0s;
-  width: 100%;
   text-decoration: none;
   border: solid 2px transparent;
   font-weight: 700;
+}
+button {
+  width: 100%;
 }
 button:hover,
 .btn:hover {
