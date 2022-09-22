@@ -17,6 +17,7 @@ Simple SPA headless ecommerce application built with React
 - Deployed to Netlify from GitHub
 - Responsive, interactive UI/UX design
 - SPA (Single Page Application)
+- Unsplash 
 
 ### Headless Commerce
 
@@ -41,3 +42,7 @@ Application built for multi-device compatibility. UI/UX goes beyond a mobile-fir
 ### CSS (Cascading Style Sheets)
 
 Conventional CSS style sheets chosen for styling due to the simplicity and size of the application. Create-React-App Webpack setup makes CSS style sheets a convient feature. CSS files are concatenated into a single minified .css file in build output during production. [create-react-app.dev/docs/adding-a-stylesheet](https://create-react-app.dev/docs/adding-a-stylesheet)
+
+### Unsplash
+
+Utilizes Unsplash API random image generation for hero image. [Unsplash.com/developers](https://unsplash.com/developers)
