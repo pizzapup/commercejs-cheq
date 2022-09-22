@@ -2,7 +2,7 @@
 
 Simple SPA headless ecommerce application built with React
 
-[subtle-druid-e910a3.netlify.app](https://app.netlify.com/sites/subtle-druid-e910a3/overview)
+[subtle-druid-e910a3.netlify.app](https://subtle-druid-e910a3.netlify.app/)
 
 ## Features:
 
