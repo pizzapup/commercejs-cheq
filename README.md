@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# simple e-commerce
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Simple SPA headless ecommerce application built with React
 
-## Available Scripts
+## URL
 
-In the project directory, you can run:
+[subtle-druid-e910a3.netlify.app](https://app.netlify.com/sites/subtle-druid-e910a3/overview)
 
-### `npm start`
+### Features:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Data used to instantiate commerce in this application is obtained from the Commerce.js public API key. Requests made using the Commerce.js SDK have responses that are returned asynchronously in a promise.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Headless Commerce
+- CSS
+- Dynamic Styling
+- React.js
+- JSX
+- Commerce.js / Chec SDK
+- API driven
+- State management with react hooks
+- Deployed to Netlify from GitHub
+- Responsive, interactive UI/UX design
+- SPA (Single Page Application)
 
-### `npm test`
+#### Headless Commerce
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Commerce.js provides a headless ecommerce backend allowing the utilization of frontend technology to deliver high-end content, API-driven experiences. [Commercejs.com](https://commercejs.com/)
 
-### `npm run build`
+#### Netlify
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Netlify hosting infrastructure, continuous integration, and single workflow deployment pipeline (deploys from GitHub). [Netlify.com](https://www.netlify.com/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### React.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Interactive, component-driven UI created with React JavaScript library. [Reactjs.org](https://reactjs.org/)
 
-### `npm run eject`
+#### Responsive, Dynamic Design
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Application built for multi-device compatibility. UI/UX goes beyond a mobile-first approach to ensure content is presented well on a variety of device/window/screen sizes, ensuring usability and satisfaction.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### CSS (Cascading Style Sheets)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Conventional CSS style sheets chosen for styling due to the simplicity and size of the application. Create-React-App Webpack setup makes CSS style sheets a convient feature. CSS files are concatenated into a single minified .css file in build output during production. [create-react-app.dev/docs/adding-a-stylesheet](https://create-react-app.dev/docs/adding-a-stylesheet)

@@ -1,5 +1,4 @@
 .cart {
-  /* width: 350px; */
   width: 25vw;
   background-color: var(--colors-surface-darker);
   border: 2px solid var(--colors-text-primary);
@@ -95,9 +94,6 @@
   border: none;
   font-size: small;
   background-color: pink;
-  /* border: none;
-  background: none;
-  font-size: 1.25rem; */
 }
 .cart-item__details-qty p {
   margin-bottom: 0;
@@ -110,7 +106,6 @@
   max-width: 40px;
   background-color: white;
   border: 2px solid var(--colors-text-primary);
-  /* padding: 0.5rem 0.75rem; */
   font-size: 0.75rem;
   text-transform: uppercase;
   color: var(--colors-text-primary);

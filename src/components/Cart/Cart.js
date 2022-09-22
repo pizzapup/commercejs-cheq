@@ -3,7 +3,7 @@ import CartItem from "./CartItem";
 import PropTypes from "prop-types";
 import "./Cart.css";
 
-const Cart = ({ cart, onRemoveFromCart, onAddToCart, product }) => {
+const Cart = ({ cart, onRemoveFromCart }) => {
   const renderEmptyMessage = () => {
     if (cart.total_unique_items > 0) {
       return;
@@ -18,10 +18,10 @@ const Cart = ({ cart, onRemoveFromCart, onAddToCart, product }) => {
   const renderItems = () =>
     cart.line_items.map((lineItem) => (
       <CartItem
+        className="cart__inner"
         item={lineItem}
         onRemoveFromCart={onRemoveFromCart}
         key={lineItem.id}
-        className="cart__inner"
       />
     ));
 
