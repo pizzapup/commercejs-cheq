@@ -18,13 +18,13 @@ Simple SPA headless ecommerce application built with React
 - Responsive, interactive UI/UX design
 - SPA (Single Page Application)
 
-## Commerce.js
-
-Data used to instantiate commerce in this application is obtained from the Commerce.js public API key. Requests made using the Commerce.js SDK have responses that are returned asynchronously in a promise.
-
 ### Headless Commerce
 
 Commerce.js provides a headless ecommerce backend allowing the utilization of frontend technology to deliver high-end content, API-driven experiences. [Commercejs.com](https://commercejs.com/)
+
+### Commerce.js
+
+Data used to instantiate commerce in this application is obtained from the Commerce.js public API key. Requests made using the Commerce.js SDK have responses that are returned asynchronously in a promise.
 
 ### Netlify
 
