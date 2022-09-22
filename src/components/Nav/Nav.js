@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import Cart from "./Cart";
+import Cart from "../Cart/Cart";
 import "./Nav.css";
-import CartIcon from "../assets/icons/CartIcon";
-import CloseIcon from "../assets/icons/CloseIcon";
+import CartIcon from "../../assets/icons/CartIcon";
+import CloseIcon from "../../assets/icons/CloseIcon";
 
 const CartNav = ({ cart, onRemoveFromCart }) => {
   const [isCartVisible, setCartVisible] = useState(false);
 
   const renderOpenButton = () => (
     <button className="nav__cart-btn  nav__cart-btn--open">
-      <CartIcon className="cart-icon" />
+      <CartIcon className="nav-icon cart-icon" />
       {cart !== null ? (
         <span className="nav__cart-total">{cart.total_items}</span>
       ) : (
@@ -19,13 +19,14 @@ const CartNav = ({ cart, onRemoveFromCart }) => {
   );
 
   const renderCloseButton = () => (
-    <button className="nav__cart-btn nav__cart-btn--close ">
-      <CloseIcon />
+    <button className="nav__cart-btn  nav__cart-btn--close">
+      <CloseIcon className="nav-icon close-icon" />
+      {cart !== null ? <span className="nav__cart-total"></span> : ""}
     </button>
   );
 
   return (
-    <div className="nav">
+    <nav className="nav">
       <div className="logo">E-Commerce</div>
       <div className="nav__cart" onClick={() => setCartVisible(!isCartVisible)}>
         {!isCartVisible ? renderOpenButton() : renderCloseButton()}
@@ -33,7 +34,7 @@ const CartNav = ({ cart, onRemoveFromCart }) => {
       {isCartVisible && (
         <Cart cart={cart} onRemoveFromCart={onRemoveFromCart} />
       )}
-    </div>
+    </nav>
   );
 };
 

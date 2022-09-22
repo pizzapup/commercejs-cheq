@@ -3,12 +3,11 @@ import CartItem from "./CartItem";
 import PropTypes from "prop-types";
 import "./Cart.css";
 
-const Cart = ({ cart, onRemoveFromCart }) => {
+const Cart = ({ cart, onRemoveFromCart, onAddToCart, product }) => {
   const renderEmptyMessage = () => {
     if (cart.total_unique_items > 0) {
       return;
     }
-
     return (
       <p className="cart__none">
         You have no items in your shopping cart, start adding some!
@@ -32,7 +31,6 @@ const Cart = ({ cart, onRemoveFromCart }) => {
       <p className="cart__total-price">{cart.subtotal.formatted_with_symbol}</p>
     </div>
   );
-
   return (
     <div className="cart">
       <h4 className="cart__heading">Your Shopping Cart</h4>

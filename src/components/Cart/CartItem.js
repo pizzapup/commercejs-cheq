@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import CloseIcon from "../../assets/icons/CloseIcon";
 
 const CartItem = ({ item, onRemoveFromCart }) => {
   const handleRemoveFromCart = () => {
@@ -26,8 +27,9 @@ const CartItem = ({ item, onRemoveFromCart }) => {
         type="button"
         className="cart-item__remove btn"
         onClick={handleRemoveFromCart}
+        title="remove item"
       >
-        Remove
+        <CloseIcon fill="red" className="remove-icon" />
       </button>
     </div>
   );

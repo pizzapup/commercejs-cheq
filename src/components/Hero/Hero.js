@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./Hero.css";
 
-const HeroImage = "https://source.unsplash.com/random/2000x860/?bright,shop";
+const HeroImage = "https://source.unsplash.com/random/2000x860/?minimal,shop";
 const Hero = ({ merchant }) => (
   <div
     className="hero img hero-img"

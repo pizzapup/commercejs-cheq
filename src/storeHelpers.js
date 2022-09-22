@@ -1,23 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { commerce } from "./lib/Commerce";
-import Theme from "./Theme/Theme";
-import Nav from "./components/Nav/Nav";
 import Hero from "./components/Hero/Hero";
 import ProductsList from "./components/Products/ProductsList";
+import Nav from "./components/Nav/Nav";
+import "./Theme/Theme";
+import Theme from "./Theme/Theme";
 
 function App() {
   const [merchant, setMerchant] = useState({});
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState({});
 
-  // Because React rendering can be triggered for many different reasons, it is best practice to wrap our commerce object method calls into a useEffect() hook. This hook acts as the replacment to componentWillMount() function when using class components. By leaving the second argument array empty, this method will run once before the initial render.
-  useEffect(() => {
-    fetchMerchantDetails();
-    fetchProducts();
-    fetchCart();
-  }, []);
-
-  /** Fetch merchant details https://commercejs.com/docs/sdk/full-sdk-reference#merchants */
+  /**
+   * Fetch merchant details
+   * https://commercejs.com/docs/sdk/full-sdk-reference#merchants
+   */
   const fetchMerchantDetails = () => {
     commerce.merchants
       .about()
@@ -29,7 +26,10 @@ function App() {
       });
   };
 
-  /** Fetch products data from Chec and stores in the products data object. https://commercejs.com/docs/sdk/products */
+  /**
+   * Fetch products data from Chec and stores in the products data object.
+   * https://commercejs.com/docs/sdk/products
+   */
   const fetchProducts = () => {
     commerce.products
       .list()
@@ -41,7 +41,10 @@ function App() {
       });
   };
 
-  /** Retrieve the current cart or create one if one does not exist https://commercejs.com/docs/sdk/cart */
+  /**
+   * Retrieve the current cart or create one if one does not exist
+   * https://commercejs.com/docs/sdk/cart
+   */
   const fetchCart = () => {
     commerce.cart
       .retrieve()
@@ -53,7 +56,10 @@ function App() {
       });
   };
 
-  /** Adds a product to the current cart in session https://commercejs.com/docs/sdk/cart/#add-to-cart
+  /**
+   * Adds a product to the current cart in session
+   * https://commercejs.com/docs/sdk/cart/#add-to-cart
+   *
    * @param {string} productId The ID of the product being added
    * @param {number} quantity The quantity of the product being added
    */
@@ -68,7 +74,10 @@ function App() {
       });
   };
 
-  /** Removes line item from cart https://commercejs.com/docs/sdk/cart/#remove-from-cart
+  /**
+   * Removes line item from cart
+   * https://commercejs.com/docs/sdk/cart/#remove-from-cart
+   *
    * @param {string} lineItemId ID of the line item being removed
    */
   const handleRemoveFromCart = (lineItemId) => {
@@ -84,14 +93,3 @@ function App() {
         );
       });
   };
-
-  return (
-    <Theme className="app">
-      <Nav cart={cart} onRemoveFromCart={handleRemoveFromCart} />
-      <Hero merchant={merchant} />
-      <ProductsList products={products} onAddToCart={handleAddToCart} />
-    </Theme>
-  );
-}
-
-export default App;
