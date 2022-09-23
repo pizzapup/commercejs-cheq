@@ -1,0 +1,28 @@
+.checkout__summary {
+  margin-top: 1.5rem;
+  background-color: var(--colors-surface-darker);
+  border: 2px solid var(--colors-surface-darker);
+  width: 20%;
+  padding: 1.5rem 2rem;
+  height: max-content;
+}
+.checkout__summary-details {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+  align-items: center;
+  background-color: var(--colors-surface-color);
+  margin-bottom: 10px;
+}
+.checkout__summary-img {
+  width: 4.5rem;
+  height: 4.5rem;
+  border: 1px solid var(--colors-surface-darker);
+  object-fit: cover;
+}
+.checkout__summary-value {
+  margin-left: auto;
+}
+.checkout__summary-name span {
+  font-size: small;
+}

@@ -1,0 +1,18 @@
+form {
+  width: 40%;
+}
+input,
+select {
+  width: 100%;
+}
+.form span {
+  display: block;
+}
+.card-details {
+  display: flex;
+  gap: 5%;
+}
+.customer-information {
+  display: flex;
+  gap: 5%;
+}

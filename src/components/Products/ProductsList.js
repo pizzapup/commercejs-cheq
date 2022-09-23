@@ -19,4 +19,5 @@ export default ProductsList;
 
 ProductsList.propTypes = {
   products: PropTypes.array,
+  onAddToCart: PropTypes.func,
 };
